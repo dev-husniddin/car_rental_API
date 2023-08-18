@@ -1,0 +1,123 @@
+Техническое задание (ТЗ) для проекта API "Car Rental":
+
+Введение:
+Проект "Car Rental" разрабатывается для предоставления RESTful API, позволяющего пользователям бронировать, арендовать и возвращать автомобили. API также предоставляет информацию о доступных автомобилях, администрирование парка автомобилей и обработку заказов.
+
+Функциональные требования:
+Регистрация и аутентификация:
+
+Пользователи могут регистрироваться с указанием имени, электронной почты и пароля.
+Пользователи могут входить в систему с помощью учетных данных.
+Просмотр доступных автомобилей:
+
+Пользователи могут просматривать список доступных автомобилей с фильтрацией и сортировкой.
+Бронирование автомобилей:
+
+Пользователи могут бронировать доступные автомобили на определенные даты и времена.
+Аренда автомобилей:
+
+После бронирования пользователи могут арендовать автомобиль и получать подтверждение.
+Возврат автомобилей:
+
+Пользователи могут возвращать арендованные автомобили по завершении аренды.
+Управление автомобилями:
+
+Администраторы могут добавлять, обновлять и удалять информацию об автомобилях.
+Обработка заказов:
+
+Администраторы могут обрабатывать заказы на аренду и возврат автомобилей.
+Уведомления:
+
+Пользователи и администраторы получают уведомления по электронной почте о бронированиях, аренде и возврате.
+Нефункциональные требования:
+Безопасность:
+
+Передача данных должна осуществляться через HTTPS.
+Для аутентификации используется механизм токенов доступа (JWT).
+Производительность:
+
+API должно эффективно обрабатывать запросы, даже при большом количестве пользователей.
+Масштабируемость:
+
+Система должна быть масштабируема для поддержки роста числа пользователей и автомобилей.
+Документация:
+
+API должно быть хорошо задокументировано с использованием OpenAPI (Swagger) или других инструментов.
+Тестирование:
+
+API должно быть тщательно протестировано, включая юнит-тесты и интеграционное тестирование.
+Интерфейс:
+
+API должно предоставлять данные в формате JSON.
+Понятные сообщения об ошибках и коды состояния HTTP должны возвращаться в ответ на некорректные запросы.
+Ограничения:
+Платежи:
+
+API не обрабатывает платежные транзакции. Платежи могут быть обработаны через сторонние платежные системы.
+Скачивание контента:
+
+API не предоставляет возможность скачивания контента (фотографий автомобилей и т.д.) напрямую.
+
+
+---------------------------english-------------------------------------------
+
+Technical Specification (TS) for the "Car Rental API" project:
+
+Introduction:
+The "Car Rental" project aims to develop a RESTful API that allows users to reserve, rent, and return cars. The API also provides information about available cars, administers the car fleet, and handles orders.
+
+Functional Requirements:
+Registration and Authentication:
+
+Users can register by providing their username, email, and password.
+Users can log into the system using their credentials.
+View Available Cars:
+
+Users can view a list of available cars with filtering and sorting options.
+Car Reservation:
+
+Users can make reservations for available cars on specific dates and times.
+Car Rental:
+
+After reservation, users can rent the car and receive a confirmation.
+Car Return:
+
+Users can return rented cars upon completing the rental period.
+Car Management:
+
+Administrators can add, update, and delete car information.
+Order Processing:
+
+Administrators can process orders for car rental and return.
+Notifications:
+
+Users and administrators receive email notifications about reservations, rentals, and returns.
+Non-Functional Requirements:
+Security:
+
+Data transmission should be secured using HTTPS.
+Access tokens (JWT) should be used for user authentication.
+Performance:
+
+The API should efficiently handle requests, even under high user load.
+Scalability:
+
+The system should be scalable to accommodate growth in users and cars.
+Documentation:
+
+The API should be well-documented using OpenAPI (Swagger) or other tools.
+Testing:
+
+Thorough testing, including unit tests and integration testing, should be conducted.
+Interface:
+
+The API should provide data in JSON format.
+Clear error messages and HTTP status codes should be returned for invalid requests.
+Limitations:
+Payments:
+
+The API does not handle payment transactions. Payments can be processed through third-party payment systems.
+Content Download:
+
+The API does not facilitate direct content download (car images, etc.).
+
